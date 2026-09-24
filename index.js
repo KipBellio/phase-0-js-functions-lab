@@ -17,19 +17,11 @@ let toUpperCase = convertToUpperCase("hello");
 console.log(toUpperCase);
 
 //Function to find the maximum number
-function findMaximum(num1, num2){
-    if (num1>num2){
-        return num1;
-    }
-    else if (num2>num1){
-        return num2;
-    }
-    else {
-        return "They are equal";
-    }
+function findMaximum(num1, num2) {
+    return Math.max(num1, num2);
 }
 //Call
-let maximum = findMaximum(40, 86);
+let maximum = findMaximum(40, 80);
 console.log(maximum);
 
 //Function to check if string is palindrome
